@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./style.css";
 import { useNavigate } from "react-router-dom"; 
+import {BarLoader} from "react-spinners"
 function ImageUpload() {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false); // Add loading state
@@ -101,6 +102,7 @@ function ImageUpload() {
         <div className="loading-spinner">
           {/* Loading Spinner */}
           <div className="spinner"></div>
+          <BarLoader />
           <p>Loading...</p>
         </div>
       ) : (

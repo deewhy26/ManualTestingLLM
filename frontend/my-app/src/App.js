@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<ImageUpload />} />
-        <Route path="/test-cases" element={<TestCasesPage />} /> {/* New route */}
+        <Route path="/test-cases" element={<TestCasesPage />} /> 
       </Routes>
     </Router>
   );
