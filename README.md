@@ -6,7 +6,7 @@ The main idea is to convert user input into robust testing instructions. The pro
 - **User Input (Screenshots + Instructions):** Users can input multiple UI screenshots and testing instructions.
 - **Widget Tree Parsing:** The system tries to understand the widget structure from the UI screenshots using a Flutter widget parser. This enhances the robustness of the generated test cases.
 - **Task Prompt Generation (Chain-of-Thought Prompting):** The backend uses Chain-of-Thought (CoT) prompting techniques to analyze the screenshots and user instructions for structured test case generation.
-
+- **Structured Output (JSON):** The application leverages the structured output capability of Gemini to ensure consistent strucuture to responses.
 ### Tech Stack
 - Backend: Flask & Gemini API 
 - Frontend: React.js
