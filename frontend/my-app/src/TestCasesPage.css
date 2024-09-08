@@ -1,0 +1,46 @@
+/* Add page title styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for carousel and its controls */
+.carousel-container {
+    position: relative;
+}
+
+/* Styling for carousel controls */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    /* Ensure controls are above carousel items */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    /* No background color */
+    border: none;
+    color: black;
+    /* Icon color */
+}
+
+/* Styling for carousel indicators */
+.carousel-indicators {
+    display: "display-outside";
+    /* Hide default indicators */
+}
+
+/* Style for test case content */
+.test-case-content ul {
+    
+    padding-left: 2;
+}
+
+.test-case-content li {
+    margin-bottom: 10px;
+}

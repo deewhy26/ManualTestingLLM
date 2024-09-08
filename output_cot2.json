@@ -1,0 +1,68 @@
+[
+    {
+        "description": "Test Case 1: Valid Bus Ticket Search",
+        "pre_conditions": [
+            "App is installed and launched",
+            "User is on the main search screen"
+        ],
+        "testing_steps": [
+            "Enter a valid origin city (e.g., Chennai) in the 'From' field.",
+            "Enter a valid destination city (e.g., Bengaluru) in the 'To' field.",
+            "Select a future date (e.g., tomorrow's date) from the date picker (assuming it exists).",
+            "Tap the 'SEARCH' button."
+        ]
+    },
+    {
+        "description": "Test Case 2: Past Date Input",
+        "pre_conditions": [
+            "App is installed and launched",
+            "User is on the main search screen"
+        ],
+        "testing_steps": [
+            "Enter a valid origin and destination city.",
+            "Attempt to select yesterday's date.",
+            "Observe the system response."
+        ]
+    },
+    {
+        "description": "Test Case 3: Swap Button Functionality",
+        "pre_conditions": [
+            "App is installed and launched",
+            "User is on the main search screen",
+            "Origin and destination fields are filled with different cities"
+        ],
+        "testing_steps": [
+            "Tap the Swap button (usually with arrows icon).",
+            "Observe the origin and destination fields."
+        ]
+    },
+    {
+        "description": "Test Case 4: Empty Field Search",
+        "pre_conditions": [
+            "App is installed and launched",
+            "User is on the main search screen"
+        ],
+        "testing_steps": [
+            "Leave the origin city field empty.",
+            "Enter a destination city.",
+            "Select a valid date.",
+            "Tap the 'Search' button.",
+            "Repeat steps 1-4 with an empty destination city field.",
+            "Repeat steps 1-4 with both origin and destination fields empty."
+        ]
+    },
+    {
+        "description": "Test Case 5: Special Characters in City Names",
+        "pre_conditions": [
+            "App is installed and launched",
+            "User is on the main search screen"
+        ],
+        "testing_steps": [
+            "Enter a city name containing an apostrophe (e.g., St. Louis).",
+            "Enter another city name with a hyphen (e.g., Port-au-Prince).",
+            "Select a valid date.",
+            "Tap the 'Search' button.",
+            "Observe the search results or error messages."
+        ]
+    }
+]

@@ -1,0 +1,260 @@
+[
+    {
+        "description": "Verify that the user can select the departure city.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen.",
+            "The departure city field is empty or pre-filled"
+        ],
+        "testing_steps": [
+            "Tap on the departure city field.",
+            "Verify that a list of cities is displayed.",
+            "Select a city from the list.",
+            "Verify that the selected city is displayed in the departure city field."
+        ]
+    },
+    {
+        "description": "Verify that the user can select the arrival city.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen.",
+            "The arrival city field is empty or pre-filled"
+        ],
+        "testing_steps": [
+            "Tap on the arrival city field.",
+            "Verify that a list of cities is displayed.",
+            "Select a city from the list.",
+            "Verify that the selected city is displayed in the arrival city field."
+        ]
+    },
+    {
+        "description": "Verify that the user can select the date of travel.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen.",
+            "The date of travel field is empty or pre-filled"
+        ],
+        "testing_steps": [
+            "Tap on the date of travel field.",
+            "Verify that a calendar is displayed.",
+            "Select a date from the calendar.",
+            "Verify that the selected date is displayed in the date of travel field."
+        ]
+    },
+    {
+        "description": "Verify that the user can swap the departure and arrival cities.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen.",
+            "Both departure and arrival cities are selected"
+        ],
+        "testing_steps": [
+            "Tap on the swap button.",
+            "Verify that the departure and arrival cities are swapped in their respective fields."
+        ]
+    },
+    {
+        "description": "Verify that the user can search for bus tickets.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen.",
+            "The departure and arrival cities, and the date of travel are selected"
+        ],
+        "testing_steps": [
+            "Tap on the search button.",
+            "Verify that the app navigates to the search results screen.",
+            "Verify that the search results screen displays a list of available buses for the selected route and date."
+        ]
+    },
+    {
+        "description": "Verify that the user can navigate to the bus hire section.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Tap on the \"Bus Hire\" button.",
+            "Verify that the app navigates to the bus hire screen."
+        ]
+    },
+    {
+        "description": "Verify that the user can navigate to the rPool section.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Tap on the \"rPool\" button.",
+            "Verify that the app navigates to the rPool screen."
+        ]
+    },
+    {
+        "description": "Verify that the user can view COVID-19 travel guidelines.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Tap on the \"READ GUIDELINES\" button within the COVID-19 Travel Guidelines section.",
+            "Verify that the app displays the COVID-19 travel guidelines."
+        ]
+    },
+    {
+        "description": "Verify that the user can view recent searches.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen.",
+            "The user has previously searched for bus tickets"
+        ],
+        "testing_steps": [
+            "Scroll down to the \"RECENT SEARCHES\" section.",
+            "Verify that the app displays a list of recent searches made by the user."
+        ]
+    },
+    {
+        "description": "Verify that the user can navigate to the Home screen.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Tap on the Home button in the bottom navigation bar.",
+            "Verify that the app navigates to the Home screen."
+        ]
+    },
+    {
+        "description": "Verify that the user can navigate to the My Bookings screen.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Tap on the My Bookings button in the bottom navigation bar.",
+            "Verify that the app navigates to the My Bookings screen."
+        ]
+    },
+    {
+        "description": "Verify that the user can navigate to the Help screen.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Tap on the Help button in the bottom navigation bar.",
+            "Verify that the app navigates to the Help screen."
+        ]
+    },
+    {
+        "description": "Verify that the user can navigate to the My Account screen.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Tap on the My Account button in the bottom navigation bar.",
+            "Verify that the app navigates to the My Account screen."
+        ]
+    },
+    {
+        "description": "Verify that the Today and Tomorrow buttons function correctly.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen."
+        ],
+        "testing_steps": [
+            "Tap on the \"TODAY\" button.",
+            "Verify that the date field updates to the current date.",
+            "Tap on the \"TOMORROW\" button.",
+            "Verify that the date field updates to the next day's date."
+        ]
+    },
+    {
+        "description": "Verify that tapping a recent search populates the search fields.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen.",
+            "The user has previous searches in the \"RECENT SEARCHES\" section"
+        ],
+        "testing_steps": [
+            "Tap on a recent search entry in the \"RECENT SEARCHES\" section.",
+            "Verify that the departure city, arrival city, and date fields are populated with the information from the selected recent search."
+        ]
+    },
+    {
+        "description": "Verify that the app displays an error message if the departure and arrival cities are the same.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Select the same city as both the departure and arrival city.",
+            "Tap on the \"SEARCH\" button.",
+            "Verify that the app displays an appropriate error message indicating that the departure and arrival cities cannot be the same."
+        ]
+    },
+    {
+        "description": "Verify that the app displays an error message for invalid date selections.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Attempt to select a past date in the date field.",
+            "Verify that the app either prevents the selection or displays an appropriate error message.",
+            "Attempt to select a date too far in the future.",
+            "Verify that the app either prevents the selection or displays an appropriate error message, if there are any limitations on future booking dates."
+        ]
+    },
+    {
+        "description": "Verify that the \"Your safety is our aim\" banner is displayed prominently.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Verify that the banner containing the text \"Your safety is our aim\" is clearly visible on the screen."
+        ]
+    },
+    {
+        "description": "Verify that the app remembers the user's last selected departure and arrival cities.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user has previously searched for bus tickets"
+        ],
+        "testing_steps": [
+            "Open the app and navigate to the bus ticket booking screen.",
+            "Verify that the departure and arrival city fields are pre-filled with the user's last selections."
+        ]
+    },
+    {
+        "description": "Verify that the app does not allow booking tickets without selecting both departure and arrival cities.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Leave the departure city field empty.",
+            "Select an arrival city.",
+            "Select a travel date.",
+            "Tap on the \"SEARCH\" button.",
+            "Verify that the app displays an error message and does not proceed with the search.",
+            "Repeat steps 1-5, this time leaving the arrival city field empty and selecting a departure city.",
+            "Verify that the app displays an error message and does not proceed with the search."
+        ]
+    },
+    {
+        "description": "Verify that the app handles network connectivity issues gracefully.",
+        "pre_conditions": [
+            "The app is installed and running.",
+            "The user is on the bus ticket booking screen"
+        ],
+        "testing_steps": [
+            "Turn off the device's internet connection.",
+            "Attempt to search for bus tickets.",
+            "Verify that the app displays an appropriate error message indicating the lack of internet connectivity.",
+            "Turn the device's internet connection back on.",
+            "Retry the search.",
+            "Verify that the app functions normally and displays the search results."
+        ]
+    }
+]

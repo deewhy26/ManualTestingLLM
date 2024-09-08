@@ -1,0 +1,185 @@
+[
+    {
+        "description": "Verify successful origin and destination selection with different cities.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Tap on the origin city field.",
+            "Select a city from the list (e.g., 'Delhi').",
+            "Verify 'Delhi' is displayed in the origin field.",
+            "Tap on the destination city field.",
+            "Select a different city (e.g., 'Hyderabad').",
+            "Verify 'Hyderabad' is displayed in the destination field."
+        ]
+    },
+    {
+        "description": "Test app behavior with empty origin and destination fields.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Leave both origin and destination fields empty.",
+            "Tap on the 'SEARCH' button."
+        ]
+    },
+    {
+        "description": "Check app response to special characters in origin/destination fields.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Enter special characters (e.g., '!@#$%^&*') in the origin field.",
+            "Tap on the 'SEARCH' button.",
+            "Enter special characters in the destination field.",
+            "Tap on the 'SEARCH' button."
+        ]
+    },
+    {
+        "description": "Verify date selection functionality within the current year.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Tap on the date field.",
+            "Select a date within the current month.",
+            "Verify the selected date is displayed correctly.",
+            "Select a date from a different month within the current year.",
+            "Verify the selected date is displayed correctly."
+        ]
+    },
+    {
+        "description": "Test app behavior when selecting past dates.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Tap on the date field.",
+            "Attempt to select a date prior to the current date.",
+            "Verify the app prevents selection of past dates or displays an error message."
+        ]
+    },
+    {
+        "description": "Verify search functionality with minimum required criteria (origin and destination).",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Select an origin city.",
+            "Select a destination city.",
+            "Leave the date field at its default value.",
+            "Tap on the 'SEARCH' button.",
+            "Verify the app performs a search and displays relevant results."
+        ]
+    },
+    {
+        "description": "Test the app's response to a network interruption during a search.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen.",
+            "The device is connected to the internet."
+        ],
+        "testing_steps": [
+            "Select an origin city.",
+            "Select a destination city.",
+            "Select a travel date.",
+            "Initiate a search by tapping the 'SEARCH' button.",
+            "While the search is in progress, turn off the device's internet connection.",
+            "Observe the app's behavior for handling the network interruption - it should display an appropriate error message or allow the user to retry."
+        ]
+    },
+    {
+        "description": "Verify that recent searches are saved and displayed correctly, including special characters.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Perform a search with a city name containing a special character (e.g., 'Pune (Maharashtra)').",
+            "Navigate away from the search results page (if applicable) and return to the main booking screen.",
+            "Scroll down to the 'RECENT SEARCHES' section.",
+            "Verify that the recent search is displayed, including the special character in the city name."
+        ]
+    },
+    {
+        "description": "Test the 'Swap' functionality with no input in origin and destination fields.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Ensure both origin and destination fields are empty.",
+            "Tap on the 'Swap' icon.",
+            "Verify that either nothing happens (ideal) or the app displays a message prompting the user to select origin and destination first."
+        ]
+    },
+    {
+        "description": "Check for potential issues with rapid tapping of the 'Swap' icon.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Select an origin city.",
+            "Select a destination city.",
+            "Rapidly tap the 'Swap' icon multiple times (at least 10 times).",
+            "Verify the app remains stable and doesn't crash, and the swap functionality works correctly after the rapid tapping."
+        ]
+    },
+    {
+        "description": "Test the app's behavior with maximum recent searches and observe how overflow is handled.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen.",
+            "The app has a defined limit for storing recent searches (if not, perform a large number of searches)."
+        ],
+        "testing_steps": [
+            "Perform enough searches to exceed the app's recent search storage capacity.",
+            "Navigate to the 'RECENT SEARCHES' section.",
+            "Verify the app handles the overflow appropriately - either by deleting the oldest searches, limiting the display to the maximum capacity, or using another method to manage the excess searches."
+        ]
+    },
+    {
+        "description": "Verify 'Bus Hire' navigation and basic functionality.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Locate and tap on the 'Bus Hire' button.",
+            "Verify the app navigates to the correct 'Bus Hire' section or page.",
+            "Check if the 'Bus Hire' section loads correctly and displays relevant information or options."
+        ]
+    },
+    {
+        "description": "Verify 'rPool' navigation and basic functionality.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Locate and tap on the 'rPool' button.",
+            "Verify the app navigates to the correct 'rPool' section or page.",
+            "Check if the 'rPool' section loads correctly and displays relevant information or options."
+        ]
+    },
+    {
+        "description": "Test app stability with multiple rapid taps on 'Bus Hire' and 'rPool' buttons.",
+        "pre_conditions": [
+            "The app is installed and launched successfully.",
+            "The user is on the main booking screen."
+        ],
+        "testing_steps": [
+            "Rapidly tap on the 'Bus Hire' button multiple times (at least 10 times).",
+            "Observe if the app remains stable and doesn't crash or freeze.",
+            "Repeat the rapid tapping for the 'rPool' button.",
+            "Again, observe if the app remains stable and responsive."
+        ]
+    }
+]

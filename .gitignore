@@ -1,0 +1,6 @@
+/uploads
+.env
+/.venv
+/frontend/node_modules
+/results
+/heirarchies
