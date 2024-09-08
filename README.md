@@ -1,4 +1,4 @@
-his project takes multiple UI screenshots and user instructions as inputs to automatically generate manual test cases.
+This project takes multiple UI screenshots and user instructions as inputs to automatically generate manual test cases.
 
 ## Overview
 
