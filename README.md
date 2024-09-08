@@ -1,5 +1,3 @@
-This project takes multiple UI screenshots and user instructions as inputs to automatically generate manual test cases.
-
 ## Overview
 
 The main idea is to convert user input into robust testing instructions. The project is designed with a **React** frontend and **Flask** backend. It uses a combination of UI screenshot analysis and instruction-based prompting to generate test cases that take into account the widget tree structure of the interface.
